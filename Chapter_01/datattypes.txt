@@ -6,8 +6,8 @@ DATA TYPES
 
 In javascript there a two types of data types 
 
-    *Primitve (pass by value)
-    *Non-Primitve (pass by reference)
+    *Primitve (pass by value) uses stack datatype
+    *Non-Primitve (pass by reference) uses heap datatype
 
 
 #PRIMITIVE (Pass By Value)
@@ -41,7 +41,6 @@ console.log(num)
 >> 23
 
 the original value of the variable dosen't change
-
 
 
 
