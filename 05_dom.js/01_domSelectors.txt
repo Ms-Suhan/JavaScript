@@ -1,0 +1,27 @@
+
+window is the object we get in browser 
+which has many methods some are 
+    
+    *doucment
+
+form which we chain selectors to preform dom manipulation
+
+such as document.getElementById('id name') gives us the element with id name
+
+document.getElementById.innerHtml ==> gives the html inside the element
+document.getElementById.innerText ==> same as innerHtml
+
+but in innerContent 
+document.getElementById.innerContent ==> gives the text html inside the element as well as the text hidden by css properties
+
+
+### QUERY SELECTORS 
+
+document.querySelector('element name/#id/.class') // selects the first element satifying the query 
+
+
+  // querySelectorAll
+
+document.querySelectorAll('element name/.class/#id')
+
+provides an nodelist and it provies forEach
