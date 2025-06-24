@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+        .orange {
+            color: orange;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    const result = parent.children
+    console.log(parent.children)
+
+    let arr = Array.from(result)
+
+    arr.forEach((ele) => console.log(ele.innerHTML))
+
+    // arr[0].style.
+
+    // console.log(parent.firstElementChild.innerHTML)
+    parent.firstElementChild.addClassName = 'day orange'
+    parent.firstElementChild.style.color = 'orange'
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne)
+    // console.log(dayOne.parentElement)
+    // console.log(dayOne.nextElementSibling)
+
+
+    // console.log('nodes :', parent.childNodes)
+
+
+    
+
+
+
+
+</script>
+</html>
