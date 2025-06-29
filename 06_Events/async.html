@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const changeName = function(){
+        document.querySelector('#heading').innerHTML = "Hello Coders"
+    }
+
+    const changeMe = setTimeout(changeName, 2000)
+    
+    document.querySelector('#stop').addEventListener('click', (e) => {
+        clearTimeout(changeMe); // cleartimeout needs context of which timeout it has to clear thats why we store in variable and then pass it 
+        console.log('timeout cleared')
+    })
+
+</script>
+</html>
